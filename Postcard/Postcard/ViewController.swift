@@ -13,10 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var enterMessageTextField: UITextField!
-    
     @IBOutlet weak var enterNameTextField: UITextField!
-    
-    
     
     
     
@@ -31,7 +28,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendEmailButtonPressed(sender: UIButton) {
+        messageLabel.hidden=false
+        
     }
+   
 
 }
 
