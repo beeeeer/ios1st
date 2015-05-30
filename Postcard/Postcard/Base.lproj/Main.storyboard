@@ -60,19 +60,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="123.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XiB-We-Hjw">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="216" y="72" width="90" height="133"/>
-                                </variation>
-                            </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dz1-Bj-51i">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dz1-Bj-51i">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="82" width="192" height="91"/>
+                                    <rect key="frame" x="21" y="268" width="287" height="215"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEh-Tk-U0D">
@@ -81,7 +75,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="181" width="192" height="30"/>
+                                    <rect key="frame" x="16" y="72" width="192" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cBo-hA-U5G">
@@ -90,7 +84,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="230" width="290" height="30"/>
+                                    <rect key="frame" x="16" y="110" width="309" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="110" width="276" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tw-Y5-Ish">
@@ -101,42 +98,53 @@
                                     <color key="titleShadowColor" red="0.4494949494949495" green="0.4494949494949495" blue="0.4494949494949495" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="304" width="290" height="30"/>
+                                    <rect key="frame" x="16" y="153" width="192" height="21"/>
                                 </variation>
                                 <connections>
                                     <action selector="sendEmailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b4i-SA-9wz"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVM-vx-oQ6">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="199" width="192" height="61"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="XiB-We-Hjw"/>
                                 <exclude reference="Dz1-Bj-51i"/>
                                 <exclude reference="mEh-Tk-U0D"/>
                                 <exclude reference="cBo-hA-U5G"/>
                                 <exclude reference="4tw-Y5-Ish"/>
+                                <exclude reference="zVM-vx-oQ6"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="XiB-We-Hjw"/>
                                 <include reference="Dz1-Bj-51i"/>
                                 <include reference="mEh-Tk-U0D"/>
                                 <include reference="cBo-hA-U5G"/>
                                 <include reference="4tw-Y5-Ish"/>
+                                <include reference="zVM-vx-oQ6"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="enterMessageTextField" destination="cBo-hA-U5G" id="RvN-h0-iAa"/>
                         <outlet property="enterNameTextField" destination="mEh-Tk-U0D" id="yiH-rO-lK6"/>
+                        <outlet property="mailButton" destination="4tw-Y5-Ish" id="1x8-8j-uOa"/>
                         <outlet property="messageLabel" destination="Dz1-Bj-51i" id="U98-sm-8vG"/>
+                        <outlet property="nameLabel" destination="zVM-vx-oQ6" id="ZUE-SD-uFt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1552.5" y="182"/>
+            <point key="canvasLocation" x="1531.5" y="181"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="p4G-aQ-zLO">
@@ -159,6 +167,5 @@
     </scenes>
     <resources>
         <image name="1.jpg" width="640" height="863"/>
-        <image name="123.jpg" width="206" height="270"/>
     </resources>
 </document>
